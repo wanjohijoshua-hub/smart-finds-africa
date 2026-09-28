@@ -1,111 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smart Finds Africa</title>
-
 <style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
-color:#222;
-}
-
-header{
-background:#111;
-color:white;
-padding:22px;
-text-align:center;
-}
-
-header h1{
-margin:0;
-font-size:30px;
-}
-
-header p{
-margin:8px 0 0;
-}
-
-nav{
-background:#f5b400;
-padding:12px;
-text-align:center;
-}
-
-nav a{
-color:#111;
-text-decoration:none;
-margin:0 12px;
-font-weight:bold;
-}
-
-.hero{
-text-align:center;
-padding:45px 20px;
-background:white;
-}
-
-.hero h2{
-font-size:32px;
-margin:0 0 12px;
-}
-
-.products{
-max-width:1100px;
-margin:auto;
-padding:30px 20px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-border-radius:10px;
-padding:20px;
-text-align:center;
-box-shadow:0 2px 8px #ccc;
-}
-
-.card h3{
-margin-top:5px;
-}
-
-.category{
-font-size:13px;
-color:#777;
-}
-
-.button{
-display:inline-block;
-background:#111;
-color:white;
-padding:12px 18px;
-border-radius:6px;
-text-decoration:none;
-margin-top:10px;
-}
-
-.coming{
-font-size:13px;
-color:#777;
-margin-top:10px;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:30px;
-}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5;color:#222}
+header{background:#111;color:white;padding:25px 15px;text-align:center}
+header h1{margin:0;font-size:30px}
+header p{margin:8px 0 0;color:#ddd}
+.container{max-width:1100px;margin:auto;padding:20px}
+h2{text-align:center;margin:25px 0}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;border-radius:12px;padding:15px;box-shadow:0 3px 10px #ccc}
+.image{height:170px;background:#eee;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:55px}
+.card h3{margin-bottom:8px}
+.price{font-size:20px;font-weight:bold;margin:10px 0}
+.card p{color:#666;line-height:1.4}
+button{width:100%;padding:12px;border:0;border-radius:8px;background:#111;color:white;font-size:16px}
+footer{margin-top:40px;background:#111;color:white;text-align:center;padding:25px}
 </style>
 </head>
 
@@ -113,124 +26,69 @@ margin-top:30px;
 
 <header>
 <h1>Smart Finds Africa</h1>
-<p>Discover useful products. Shop smarter.</p>
+<p>Discover great products from trusted brands</p>
 </header>
 
-<nav>
-<a href="#products">Products</a>
-<a href="#payment">Payment</a>
-<a href="#about">About</a>
-</nav>
+<div class="container">
 
-<section class="hero">
-<h2>Smart Products for Africa</h2>
-<p>Discover interesting products from trusted online brands.</p>
-<a class="button" href="#products">Explore Products</a>
-</section>
+<h2>Featured Products</h2>
 
-<section class="products" id="products">
-
-<h2>Featured Finds</h2>
-
-<div class="grid">
+<div class="products">
 
 <div class="card">
-<p class="category">Samsung</p>
-<h3>Samsung Galaxy Buds</h3>
-<p>Wireless earbuds for music, calls and everyday listening.</p>
-<a class="button" href="#" onclick="return false;">View Product</a>
-<p class="coming">Affiliate link coming soon</p>
+<div class="image">👟</div>
+<h3>Men's Sneakers</h3>
+<div class="price">View Price</div>
+<p>Trendy everyday sneakers for men.</p>
+<button>View Product</button>
 </div>
 
 <div class="card">
-<p class="category">Samsung</p>
-<h3>Samsung Galaxy Watch</h3>
-<p>A smart wearable for fitness, notifications and everyday use.</p>
-<a class="button" href="#" onclick="return false;">View Product</a>
-<p class="coming">Affiliate link coming soon</p>
+<div class="image">👕</div>
+<h3>Men's Fashion</h3>
+<div class="price">View Price</div>
+<p>Modern clothing and stylish everyday wear.</p>
+<button>View Product</button>
 </div>
 
 <div class="card">
-<p class="category">Samsung</p>
-<h3>Samsung Fast Charger</h3>
-<p>A convenient fast-charging accessory for compatible devices.</p>
-<a class="button" href="#" onclick="return false;">View Product</a>
-<p class="coming">Affiliate link coming soon</p>
+<div class="image">👗</div>
+<h3>Women's Fashion</h3>
+<div class="price">View Price</div>
+<p>Fashionable clothing and accessories.</p>
+<button>View Product</button>
 </div>
 
 <div class="card">
-<p class="category">Nike</p>
-<h3>Nike Air Force 1</h3>
-<p>A popular everyday sneaker from Nike.</p>
-<a class="button" href="#" onclick="return false;">View Product</a>
-<p class="coming">Affiliate link coming soon</p>
+<div class="image">📱</div>
+<h3>Electronics</h3>
+<div class="price">View Price</div>
+<p>Useful gadgets and electronic products.</p>
+<button>View Product</button>
 </div>
 
 <div class="card">
-<p class="category">Adidas</p>
-<h3>Adidas Samba</h3>
-<p>A classic Adidas sneaker with a timeless casual style.</p>
-<a class="button" href="#" onclick="return false;">View Product</a>
-<p class="coming">Affiliate link coming soon</p>
+<div class="image">💄</div>
+<h3>Beauty Products</h3>
+<div class="price">View Price</div>
+<p>Beauty and personal-care products.</p>
+<button>View Product</button>
 </div>
 
 <div class="card">
-<p class="category">Decathlon</p>
-<h3>Quechua Backpack</h3>
-<p>A practical backpack for travel, school and outdoor activities.</p>
-<a class="button" href="#" onclick="return false;">View Product</a>
-<p class="coming">Affiliate link coming soon</p>
-</div>
-
-<div class="card">
-<p class="category">Dyson</p>
-<h3>Dyson Airwrap</h3>
-<p>A premium hair-styling tool from Dyson.</p>
-<a class="button" href="#" onclick="return false;">View Product</a>
-<p class="coming">Affiliate link coming soon</p>
-</div>
-
-<div class="card">
-<p class="category">SharkNinja</p>
-<h3>Portable Blender</h3>
-<p>A convenient blender option for smoothies and drinks on the go.</p>
-<a class="button" href="#" onclick="return false;">View Product</a>
-<p class="coming">Affiliate link coming soon</p>
-</div>
-
-<div class="card">
-<p class="category">AliExpress</p>
-<h3>Portable Power Bank</h3>
-<p>A useful portable charging solution for smartphones and devices.</p>
-<a class="button" href="#" onclick="return false;">View Product</a>
-<p class="coming">Affiliate link coming soon</p>
-</div>
-
-<div class="card">
-<p class="category">Sephora</p>
-<h3>Skincare Products</h3>
-<p>Discover popular skincare products from beauty brands.</p>
-<a class="button" href="#" onclick="return false;">View Product</a>
-<p class="coming">Affiliate link coming soon</p>
+<div class="image">🏠</div>
+<h3>Home Products</h3>
+<div class="price">View Price</div>
+<p>Practical products for your home.</p>
+<button>View Product</button>
 </div>
 
 </div>
-</section>
-
-<section class="hero" id="payment">
-<h2>Payment</h2>
-<p>Secure payment options will be available here.</p>
-<p>PayPal payment setup coming soon.</p>
-</section>
-
-<section class="hero" id="about">
-<h2>About Smart Finds Africa</h2>
-<p>We bring interesting and useful products together in one convenient place.</p>
-<p>Our goal is to help shoppers discover products from trusted online brands.</p>
-</section>
+</div>
 
 <footer>
-<p>© 2026 Smart Finds Africa. All rights reserved.</p>
+<p>Smart Finds Africa</p>
+<p>Affiliate products coming soon</p>
 </footer>
 
 </body>
