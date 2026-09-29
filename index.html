@@ -220,5 +220,57 @@ body {
   background: linear-gradient(135deg, #f5efe3, #eadcc8);
 }-background-image: linear-gradient(135deg, #f5efe3 0%, #eadcc5 50%, #f8f3ea 100%);: radial-gradient(#d8c9ad 1px, transparent 1px);
 </style>
-</body>
+<!-- SEARCH & OUR STORY -->
+<section class="info-section">
+
+  <div class="search-box">
+    <h2>Find What You're Looking For</h2>
+    <input type="text" id="siteSearch"
+      placeholder="Search shoes, clothes, bags and more..."
+      onkeyup="searchProducts()">
+  </div>
+
+  <div class="our-story">
+    <h2>Our Story</h2>
+    <p>
+      Smart Finds Africa was created to make discovering great products
+      easier and more convenient. We bring together fashion, footwear,
+      bags and other exciting finds in one place, helping shoppers
+      discover products from trusted online stores.
+    </p>
+    <p>
+      Our goal is simple — to connect Africa with great products,
+      attractive deals and convenient online shopping.
+    </p>
+  </div>
+
+  <div class="shop-categories">
+    <h2>Shop Categories</h2>
+    <div class="category-buttons">
+      <button>Shoes</button>
+      <button>Men's Wear</button>
+      <button>Ladies' Wear</button>
+      <button>Kids' Wear</button>
+      <button>Bags</button>
+    </div>
+  </div>
+
+</section>
+
+<script>
+function searchProducts() {
+  let input = document.getElementById("siteSearch").value.toLowerCase();
+  let products = document.querySelectorAll(".product-card");
+
+  products.forEach(function(product) {
+    let text = product.innerText.toLowerCase();
+
+    if (text.includes(input)) {
+      product.style.display = "";
+    } else {
+      product.style.display = "none";
+    }
+  });
+}
+</script>/body>
 </html>
